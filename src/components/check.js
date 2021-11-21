@@ -8,7 +8,7 @@ const Check =()=>{
 const handleClick = (e) =>{
     e.preventDefault()
     SetLoading(true)
-    fetch(`http://localhost:4000/api/${url}`)
+    fetch(`https://accessgram.herokuapp.com/${url}`)
     .then(res=>res.json())
     .then(result=>{
       SetData(result.issues)
