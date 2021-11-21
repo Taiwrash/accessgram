@@ -7,7 +7,7 @@ const app = express()
 const port =  process.env.PORT || 4000 
 app.use(cors())
 app.get('/:url', (req, res) => {
- const url = req.url.split('/')[2]
+ const url = req.url.split('/')[1]
   pa11y(url)
     .then(results => {
       res.status(200).json(results)
