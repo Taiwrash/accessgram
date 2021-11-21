@@ -4,9 +4,9 @@ const cors = require('cors')
 
 
 const app = express()
-const port = 4000 || process.env.PORT
+const port =  process.env.PORT || 4000 
 app.use(cors())
-app.get('/api/:url', (req, res) => {
+app.get('/:url', (req, res) => {
  const url = req.url.split('/')[2]
   pa11y(url)
     .then(results => {
