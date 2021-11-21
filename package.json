@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "accessibility following the a11y standard",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Mudasiru Rasheed",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pa11y": "^6.1.1"
+  }
+}
